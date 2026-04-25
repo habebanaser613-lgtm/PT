@@ -39,12 +39,16 @@ html {
     scroll-behavior: smooth;
 }
 
-.navbar {
+
+   .navbar {
     position: sticky;
     top: 0;
     background-color: var(--navbar-bg);
-    padding: 15px 0;
-    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
@@ -52,13 +56,19 @@ html {
 .navbar a {
     color: var(--nav-link);
     text-decoration: none;
-    margin: 8px 12px;
+    margin: 0;
     transition: background 0.3s;
     font-weight: bold;
     font-size: 1.1em;
+    padding: 5px 10px;
     border-radius: 6px;
 }
 
+@media (max-width: 600px) {
+    .navbar a {
+        font-size: 0.9em;
+        padding: 5px 5px;
+    }
 .navbar a:hover {
     color: var(--nav-hover);
 }
