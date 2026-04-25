@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 :root {
     --bg-color: #F3E9DC;
     --text-color: #c08552;
@@ -157,3 +160,11 @@ section {
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
+@media(max-width:600px)
+{
+    body {
+        padding: 10px;
+        margin: 10px auto;
+        max-width: 95%;
+}
+    }
